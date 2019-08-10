@@ -1,0 +1,41 @@
+{
+  "name": "cv-portfolio-xb",
+  "version": "0.2.0",
+  "description": "resumen curricular y portafolio de proyectos web",
+  "main": "/js/resume.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XBasir/cv-portafolio.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "cv",
+    "portfolio"
+  ],
+  "author": "xbasir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XBasir/cv-portafolio/issues"
+  },
+  "homepage": "https://github.com/XBasir/cv-portafolio#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/runtime-corejs2": "^7.0.0",
+    "autoprefixer": "^9.1.3",
+    "babel-loader": "^8.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "extract-loader": "^2.0.1",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "3.5.1"
+  }
+}
