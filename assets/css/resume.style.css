@@ -109,8 +109,7 @@ p.lead {
 
 section.resume-section {
   padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-  max-width: 75rem; }
+  padding-bottom: 5rem !important; }
   section.resume-section .resume-item .resume-date {
     min-width: none; }
 
@@ -133,6 +132,7 @@ section.resume-section {
     right: 0;
     margin: 0 0 15px; }
     #portfolio .portfolio-item .portfolio-link {
+      background-color: #000000;
       position: relative;
       display: block;
       max-width: 400px;
@@ -141,7 +141,8 @@ section.resume-section {
       #portfolio .portfolio-item .portfolio-link img {
         height: 20vw;
         object-fit: cover;
-        min-width: 100%; }
+        min-width: 100%;
+        opacity: 0.6; }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover {
         position: absolute;
         width: 100%;
@@ -187,20 +188,20 @@ section.resume-section {
     margin: 0 0 30px; } }
 
 .portfolio-modal .modal-dialog {
-  margin: 0.2rem auto;
+  margin: auto;
   max-width: 70vw; }
 
 .portfolio-modal .modal-content {
-  padding: 10px 0;
+  padding: 80px 0 40px 0;
   text-align: center; }
   .portfolio-modal .modal-content h2 {
-    font-size: 3em;
-    margin: 5px 15px; }
+    font-size: 3em; }
   .portfolio-modal .modal-content p {
     margin-bottom: 30px; }
   .portfolio-modal .modal-content p.item-intro {
     font-size: 16px;
-    margin: 0px 5px 25px !important; }
+    font-style: italic;
+    margin: 0 0 10px; }
   .portfolio-modal .modal-content ul.list-inline {
     margin-top: 0;
     margin-bottom: 30px; }
@@ -242,39 +243,9 @@ section.resume-section {
       transform: rotate(90deg);
       background-color: #212529; }
 
-@media (max-width: 867px) {
-  .portfolio-modal .modal-dialog {
-    margin: 0.2rem auto;
-    max-width: 90vw; }
-  .portfolio-modal .close-modal {
-    right: 40px;
-    width: 25px;
-    height: 25px; }
-    .portfolio-modal .close-modal .lr {
-      /* Safari and Chrome */
-      z-index: 1051;
-      width: 1px;
-      height: 35px;
-      margin-left: 35px;
-      /* IE 9 */
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-      background-color: #212529; }
-      .portfolio-modal .close-modal .lr .rl {
-        /* Safari and Chrome */
-        z-index: 1052;
-        width: 1px;
-        height: 35px;
-        /* IE 9 */
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-        background-color: #212529; } }
-
 .tag {
   padding: 7px 7px;
-  line-height: 1.9;
+  line-height: 1.9 !important;
   color: white;
   font-size: 12px;
   border-radius: 10px;
@@ -288,6 +259,80 @@ section.resume-section {
     background-color: #BD5D38; }
   .tag .cuaternary {
     background-color: #6f42c1; }
+
+@media (max-width: 768px) {
+  .portfolio-item .portfolio-link img {
+    height: 30vh !important; }
+  .portfolio-modal .modal-dialog {
+    max-width: 90vw; }
+  .tag {
+    line-height: 3 !important; } }
+
+.container-skills {
+  width: 95%;
+  margin-right: auto;
+  padding: 0px 40px; }
+  .container-skills .fab, .container-skills .fa {
+    position: absolute;
+    margin-top: -38px !important;
+    margin-left: -32px; }
+
+@keyframes load {
+  from {
+    width: 0%; } }
+
+@-webkit-keyframes load {
+  from {
+    width: 0%; } }
+
+@-moz-keyframes load {
+  from {
+    width: 0%; } }
+
+@-o-keyframes load {
+  from {
+    width: 0%; } }
+
+.bar {
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF; }
+
+.bar::before {
+  content: attr(data-skill);
+  background-color: #495057;
+  display: inline-block;
+  opacity: 0.75;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s; }
+
+.bar.front::before {
+  background-color: #BD5D38; }
+
+.bar.back::before {
+  background-color: #dc3545; }
+
+.bar.learning::before {
+  width: calc(20% - 10px); }
+
+.bar.basic::before {
+  width: calc(40% - 10px); }
+
+.bar.intermediate::before {
+  width: calc(60% - 10px); }
+
+.bar.advanced::before {
+  width: calc(80% - 10px); }
+
+.bar.expert::before {
+  width: calc(88% - 10px); }
 
 .bg-primary {
   background-color: #BD5D38 !important; }

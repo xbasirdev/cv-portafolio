@@ -1,206 +1,189 @@
-#portfolio {
-    a{
-        color: #000000 !important;
-    }
-    background-color: $gray-200 !important;
-    .portfolio-item {
 
-      right: 0;
-      margin: 0 0 15px;
-      .portfolio-link {
-        img{
-            height: 20vw;
-            object-fit: cover;
-            min-width: 100%;
+#portfolio {
+  a{
+      color: #000000 !important;
+  }
+  background-color: $gray-200 !important;
+  .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+    .portfolio-link {
+      background-color: #000000;
+      img{
+          height: 20vw;
+          object-fit: cover;
+          min-width: 100%;
+          opacity: 0.6;
+      }
+      position: relative;
+      display: block;
+      max-width: 400px;
+      margin: 0 auto;
+      cursor: pointer;
+      .portfolio-hover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        transition: all ease 0.5s;
+        opacity: 0;
+        background: fade-out($primary, .1);
+        &:hover {
+          opacity: 1;
         }
-        position: relative;
-        display: block;
-        max-width: 400px;
-        margin: 0 auto;
-        cursor: pointer;
-        .portfolio-hover {
+        .portfolio-hover-content {
+          font-size: 20px;
           position: absolute;
+          top: 50%;
           width: 100%;
-          height: 100%;
-          -webkit-transition: all ease 0.5s;
-          -moz-transition: all ease 0.5s;
-          transition: all ease 0.5s;
-          opacity: 0;
-          background: fade-out($primary, .1);
-          &:hover {
-            opacity: 1;
-          }
-          .portfolio-hover-content {
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            height: 20px;
+          height: 20px;
+          margin-top: -12px;
+          text-align: center;
+          color: white;
+          i {
             margin-top: -12px;
-            text-align: center;
-            color: white;
-            i {
-              margin-top: -12px;
-            }
-            h3,
-            h4 {
-              margin: 0;
-            }
+          }
+          h3,
+          h4 {
+            margin: 0;
           }
         }
       }
-      .portfolio-caption {
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 25px;
-        text-align: center;
-        background-color: $white;
-        h4 {
-          margin: 0;
-          text-transform: none;
-        }
-        p {
-          font-size: 16px;
-          margin: 0;
-        }
-      }
     }
-    * {
-      z-index: 2;
-    }
-  }
-  @media(min-width:767px) {
-    #portfolio {
-      .portfolio-item {
-        margin: 0 0 30px;
-      }
-    }
-  }
-  
-  .portfolio-modal {
-    .modal-dialog {
-      margin: 0.2rem auto;
-      max-width: 70vw;
-    }
-    .modal-content {
-      padding: 10px 0;
+    .portfolio-caption {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 25px;
       text-align: center;
-      h2 {
-        font-size: 3em;
-        margin: 5px 15px;
+      background-color: $white;
+      h4 {
+        margin: 0;
+        text-transform: none;
       }
       p {
-        margin-bottom: 30px;
-      }
-      p.item-intro {
         font-size: 16px;
-        margin: 0px 5px 25px !important;
-      }
-      ul.list-inline {
-        margin-top: 0;
-        margin-bottom: 30px;
-      }
-      img {
-        margin-bottom: 30px;
-        max-height: 47vh;
-      }
-      button {
-        cursor: pointer;
-      }
-    }
-    .close-modal {
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      width: 75px;
-      height: 75px;
-      cursor: pointer;
-      background-color: transparent;
-      &:hover {
-        opacity: 0.3;
-      }
-      .lr {
-        /* Safari and Chrome */
-        z-index: 1051;
-        width: 1px;
-        height: 75px;
-        margin-left: 35px;
-        /* IE 9 */
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-        background-color: $gray-900;
-        .rl {
-          /* Safari and Chrome */
-          z-index: 1052;
-          width: 1px;
-          height: 75px;
-          /* IE 9 */
-          -webkit-transform: rotate(90deg);
-          -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-          background-color: $gray-900;
-        }
+        margin: 0;
       }
     }
   }
-  
-@media(max-width:867px) {
-    .portfolio-modal {
-            .modal-dialog {
-                margin: 0.2rem auto;
-                max-width: 90vw;
-            }
-            .close-modal {
-                right: 40px;
-                width: 25px;
-                height: 25px;
-
-                .lr {
-                    /* Safari and Chrome */
-                    z-index: 1051;
-                    width: 1px;
-                    height: 35px;
-                    margin-left: 35px;
-                    /* IE 9 */
-                    -webkit-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                    transform: rotate(45deg);
-                    background-color: $gray-900;
-                    .rl {
-                    /* Safari and Chrome */
-                    z-index: 1052;
-                    width: 1px;
-                    height: 35px;
-                    /* IE 9 */
-                    -webkit-transform: rotate(90deg);
-                    -ms-transform: rotate(90deg);
-                    transform: rotate(90deg);
-                    background-color: $gray-900;
-                }
-            }
-        }
+  * {
+    z-index: 2;
+  }
+}
+@media(min-width:767px) {
+  #portfolio {
+    .portfolio-item {
+      margin: 0 0 30px;
     }
+  }
+}
+
+.portfolio-modal {
+  .modal-dialog {
+    margin: auto;
+    max-width: 70vw;
+  }
+  .modal-content {
+    padding: 80px 0 40px 0;
+    text-align: center;
+    h2 {
+      font-size: 3em;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+    p.item-intro {
+      font-size: 16px;
+      font-style: italic;
+      margin: 0 0 10px;
+    }
+    ul.list-inline {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    img {
+      margin-bottom: 30px;
+      max-height: 47vh;
+    }
+    button {
+      cursor: pointer;
+    }
+  }
+  .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background-color: transparent;
+    &:hover {
+      opacity: 0.3;
+    }
+    .lr {
+      /* Safari and Chrome */
+      z-index: 1051;
+      width: 1px;
+      height: 75px;
+      margin-left: 35px;
+      /* IE 9 */
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      background-color: $gray-900;
+      .rl {
+        /* Safari and Chrome */
+        z-index: 1052;
+        width: 1px;
+        height: 75px;
+        /* IE 9 */
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        background-color: $gray-900;
+      }
+    }
+  }
 }
 
 .tag{
-    padding: 7px 7px;
-    line-height: 1.9;
-    color: white;
-    font-size: 12px;
-    border-radius: 10px;
-    margin: 7px 2px;
-    opacity: 0.75;
-    .first{
-        background-color: $red;
+  padding: 7px 7px;
+  line-height: 1.9 !important;
+  color: white;
+  font-size: 12px;
+  border-radius: 10px;
+  margin: 7px 2px;
+  opacity: 0.75;
+  .first{
+      background-color: $red;
+  }
+  .second{
+      background-color: $gray-700;
+  }
+  .tertiary{
+      background-color: $orange;
+  }
+  .cuaternary{
+      background-color: $purple;
+  }
+}
+
+@media(max-width:768px) {
+  .portfolio-item {
+    .portfolio-link {
+      img{
+          height: 30vh !important;
+      }
     }
-    .second{
-        background-color: $gray-700;
+  }
+
+  .portfolio-modal {
+    .modal-dialog {
+      max-width: 90vw;
     }
-    .tertiary{
-        background-color: $orange;
-    }
-    .cuaternary{
-        background-color: $purple;
-    }
+  }
+  .tag{
+    line-height: 3 !important;
+  }
 }
