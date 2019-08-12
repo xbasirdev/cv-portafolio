@@ -151,40 +151,6 @@
   }
 }
 
-.tag{
-  padding: 7px 7px;
-  line-height: 1.9 !important;
-  color: white;
-  font-size: 12px;
-  border-radius: 10px;
-  margin: 7px 2px;
-  opacity: 0.75;
-
-  .first{
-      background-color: $tech-primary;
-      &:hover{
-        opacity: 1;
-      }
-  }
-  .second{
-      background-color: $tech-secondary;
-      &:hover{
-        opacity: 1;
-      }
-  }
-  .tertiary{
-      background-color: $tech-tertiary;
-      &:hover{
-        opacity: 1;
-      }
-  }
-  .cuaternary{
-      background-color: $tech-cuaternary;
-      &:hover{
-        opacity: 1;
-      }
-  }
-}
 
 @media(max-width:768px) {
   .portfolio-item {
