@@ -3,6 +3,10 @@
   a{
       color: #000000 !important;
   }
+
+  .btn{
+    margin-bottom: 5px;
+  }
   background-color: $gray-200 !important;
   .portfolio-item {
     right: 0;
@@ -155,17 +159,30 @@
   border-radius: 10px;
   margin: 7px 2px;
   opacity: 0.75;
+
   .first{
-      background-color: $red;
+      background-color: $tech-primary;
+      &:hover{
+        opacity: 1;
+      }
   }
   .second{
-      background-color: $gray-700;
+      background-color: $tech-secondary;
+      &:hover{
+        opacity: 1;
+      }
   }
   .tertiary{
-      background-color: $orange;
+      background-color: $tech-tertiary;
+      &:hover{
+        opacity: 1;
+      }
   }
   .cuaternary{
-      background-color: $purple;
+      background-color: $tech-cuaternary;
+      &:hover{
+        opacity: 1;
+      }
   }
 }
 

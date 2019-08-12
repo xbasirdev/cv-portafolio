@@ -128,6 +128,8 @@ section.resume-section {
   background-color: #f1f2f3 !important; }
   #portfolio a {
     color: #000000 !important; }
+  #portfolio .btn {
+    margin-bottom: 5px; }
   #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px; }
@@ -252,13 +254,21 @@ section.resume-section {
   margin: 7px 2px;
   opacity: 0.75; }
   .tag .first {
-    background-color: #dc3545; }
+    background-color: #868e96; }
+    .tag .first:hover {
+      opacity: 1; }
   .tag .second {
-    background-color: #495057; }
+    background-color: #dc3545; }
+    .tag .second:hover {
+      opacity: 1; }
   .tag .tertiary {
     background-color: #BD5D38; }
+    .tag .tertiary:hover {
+      opacity: 1; }
   .tag .cuaternary {
     background-color: #6f42c1; }
+    .tag .cuaternary:hover {
+      opacity: 1; }
 
 @media (max-width: 768px) {
   .portfolio-item .portfolio-link img {
@@ -269,7 +279,7 @@ section.resume-section {
     line-height: 3 !important; } }
 
 .container-skills {
-  width: 95%;
+  width: 93%;
   margin-right: auto;
   padding: 0px 40px; }
   .container-skills .fab, .container-skills .fa {
@@ -308,16 +318,22 @@ section.resume-section {
   opacity: 0.75;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
-  animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s; }
+  animation: load 5s 0s;
+  -webkit-animation: load 5s 0s;
+  -moz-animation: load 5s 0s;
+  -o-animation: load 5s 0s; }
 
-.bar.front::before {
+.bar.first::before {
+  background-color: #868e96; }
+
+.bar.second::before {
+  background-color: #dc3545; }
+
+.bar.tertiary::before {
   background-color: #BD5D38; }
 
-.bar.back::before {
-  background-color: #dc3545; }
+.bar.cuaternary::before {
+  background-color: #6f42c1; }
 
 .bar.learning::before {
   width: calc(20% - 10px); }
@@ -328,11 +344,26 @@ section.resume-section {
 .bar.intermediate::before {
   width: calc(60% - 10px); }
 
+.bar.good::before {
+  width: calc(65% - 10px); }
+
+.bar.very-good::before {
+  width: calc(70% - 10px); }
+
+.bar.great::before {
+  width: calc(75% - 10px); }
+
 .bar.advanced::before {
   width: calc(80% - 10px); }
 
 .bar.expert::before {
   width: calc(88% - 10px); }
+
+@media (max-width: 767px) {
+  .container-skills {
+    width: 100%;
+    margin-right: auto;
+    padding: 0px 10px 0px 40px; } }
 
 .bg-primary {
   background-color: #BD5D38 !important; }

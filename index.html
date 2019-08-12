@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -12,7 +12,7 @@
 
   <link rel="shortcut icon" href="assets/img/favicon1.ico"/>
 
-  <!-- Bootstrap core CSS -->
+  <!-- Bootstrap -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts-->
@@ -20,13 +20,13 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-  <!-- Custom styles -->
+  <!--styles -->
   <link href="assets/css/resume.style.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
-
+  <!-- nav -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Xavier Basir</span>
@@ -43,16 +43,16 @@
           <a class="nav-link js-scroll-trigger" href="#about">Conóceme</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#experience">Experiencia</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Formación</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#portfolio">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Formación</a>
         </li>
       </ul>
     </div>
@@ -60,6 +60,7 @@
 
   <div class="container-fluid p-0">
 
+    <!-- Conóceme -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
         <h1 class="mb-0">Xavier
@@ -69,11 +70,11 @@
           <a href="tel:+58429276295"><i class="fa fa-phone-square fa-rotate-90"></i> +58 424-9276295 </a> ·
           <a href="mailto:xavierfiv@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> xavierfiv@gmail.com</a>
         </div>
-        <p class="lead mb-5">Venezolano. 21 años de edad
-          Estudiante de Ing. Informática (carrera a fines) <br>
+        <p class="lead mb-5 pr-5">Venezolano. 21 años de edad.
+          Estudiante de Ing. Informática (carrera a fines). <br>
           Persona responsable, con muchas ganas de seguir
-          aprendiendo y obteniendo experiencia en el área de
-          desarrollo de software.</p>
+          aprendiendo y obteniendo experiencia en
+          tecnologías y herramientas en el área de desarrollo web</p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/xavier-alexandro-basir-jeffrey-4491b8171/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
@@ -91,137 +92,109 @@
       </div>
     </section>
 
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+        <div class="w-100">
+          <h2 class="mb-5">habilidades y conocimientos</h2>
+  
+          <div class="subheading mb-3">conocimiento en Lenguajes &amp; herramientas</div>
+  
+          <div class="container-skills mb-4">
+            <div class="bar expert first" data-skill="HTML"></div> <i class="fab fa-2x fa-html5"></i>
+            <div class="bar advanced first" data-skill="CSS"></div> <i class="fab fa-2x fa-css3-alt"></i>
+            <div class="bar very-good second" data-skill="Javascript"></div> <i class="fab fa-2x fa-js-square"></i>
+            <div class="bar intermediate tertiary" data-skill="Vue.js"></div> <i class="fab fa-2x fa-vuejs"></i>
+            <div class="bar expert tertiary" data-skill="Boostrap"></div> <i class="fab fa-2x fa-bootstrap"></i>
+            <div class="bar intermediate second" data-skill="PHP"></div> <i class="fab fa-2x fa-php" style="margin-left: -40px"></i>
+            <div class="bar good tertiary" data-skill="Laravel"></div> <i class="fab fa-2x fa-laravel" style="margin-left: -40px"></i>
+            <div class="bar great cuaternary" data-skill="GIT"></div> <i class="fab fa-2x fa-git-square"></i>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <div class="subheading mb-3">Aptitudes y Workflow</div>
+              <ul class="fa-ul mb-0">
+                <li>
+                    <i class="fa-li fa fa-spell-check"></i>
+                    Inglés avanzado</li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>
+                  Mobile-First</li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>
+                  Responsive Design</li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>
+                  MVC</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="subheading mb-3">otras herramientas manejadas</div>
+              <p class="tag pr-5" style="line-height: 2.8 !important"><span class="tag cuaternary">AJAX</span><span class="tag tertiary">SASS</span>
+                <span class="tag cuaternary">JQUERY</span> <span class="tag second">MySQL</span> <span class="tag second">PostgreSQL</span>
+                <span class="tag tertiary">LESS</span> <span class="tag first">GITHUB</span> <span class="tag first">GITLAB</span>
+              </p>
+            </div>
+        </div>
+      </section>
+  
+      <hr class="m-0">
+
     <hr class="m-0">
 
+    <!-- experiencia -->
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
         <h2 class="mb-5">Experiencia Laboral <span class="text-primary">+1 año en web</span></h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4">
+            <div class="resume-content">
+              <h3 class="mb-0">Desarrollador web</h3>
+              <div class="subheading mb-3"><a href="https://www.imaginacolombia.com/" target="_blank">IMAGINA COLOMBIA</a> Remoto</div>
+              <p>Desarrollador web principalmente Frontend usando:</p>
+              <p class="tag px-0" style="line-height: 2.8 !important"><span class="tag first">HTML</span><span class="tag first">CSS</span><span class="tag second">JS</span><span class="tag second">PHP</span>
+                <span class="tag tertiary">LARAVEL</span><span class="tag tertiary">VUE.JS</span><span class="tag tertiary">BOOTSTRAP</span>
+                <span class="tag tertiary">SASS</span><span class="tag cuaternary">JQUERY</span><span class="tag cuaternary">AJAX</span>
+                <span class="tag cuaternary">GIT</span>
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">DIC 2018 - JUN 2019</span>
+            </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4">
+            <div class="resume-content">
+              <h3 class="mb-0">Desarrollador web</h3>
+              <div class="subheading mb-3"><a href="http://www.briqcar.com.ve/" target="_blank">VENPRECAR CA.</a> Presencial</div>
+              <p>Desarrollador web Fullstack de intranet usando:</p>
+              <p class="tag px-0" style="line-height: 2.8 !important"><span class="tag first">HTML</span><span class="tag first">CSS</span><span class="tag second">JS</span><span class="tag second">PHP</span>
+                <span class="tag tertiary">LARAVEL</span><span class="tag tertiary">BOOTSTRAP</span><span class="tag tertiary">POSTGRESQL</span><span class="tag cuaternary">JQUERY</span>
+                <span class="tag cuaternary">GIT</span>
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">JUN 2018 - NOV 2018</span>
+            </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4">
           <div class="resume-content">
             <h3 class="mb-0">Desarrollador Java</h3>
             <div class="subheading mb-3"><a href="http://fundabit.gob.ve/" target="_blank">FUNDABIT</a> Presencial</span></div>
-            <p>Parte del equipo de desarrollo de un software educativo de materia educativo desarrollado en JAVA</p>
+            <p>Desarrollador de software educativo usando:</p>
+            <p class="tag px-0"><span class="tag second">JAVA</span></p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">JUL 2017 - DIC 2017</span>
           </div>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Desarrollador web</h3>
-            <div class="subheading mb-3"><a href="http://www.briqcar.com.ve/" target="_blank">VENPRECAR CA.</a> Presencial</div>
-            <p>Desarrollador web Fullstack de la empresa con Laravel, Bootstrap, Jquery, PHP, etc.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">JUN 2018 - NOV 2018</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Desarrollador web</h3>
-            <div class="subheading mb-3"><a href="https://www.imaginacolombia.com/" target="_blank">IMAGINA COLOMBIA</a> Remoto</div>
-            <p>Desarrollador web principalmente Frontend usando Laravel, VueJS, Bootstrap, Jquery, PHP, etc.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">DIC 2018 - JUN 2019</span>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="mb-5">Formación académica</h2>
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4">
-            <div class="resume-content">
-              <h3 class="mb-0">U.E.C.P Santo tomé de Guayana</h3>
-              <div class="subheading mb-3">Bachiller en ciencias</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">OCT 2009 - JUL 2014</span>
-            </div>
-          </div>
-  
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="resume-content">
-              <h3 class="mb-0">Universidad Nacional Experimental de Guayana</h3>
-              <div class="subheading">Ingeniero en Informática</div>
-              <div>Próximo a culminar la carrera (pendiente solo por trabajo de grado)</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">OCT 2014 - Actualidad </span>
-            </div>
-          </div>
-  
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-              <div class="resume-content">
-                <h3 class="mb-0">Platzi</h3>
-                <div class="subheading ">Estudiante de Cursos en línea sobre desarrollo de software y crecimiento personal</div>
-                <div>Puede consultar mi perfil de Platzi y cursos aprobados <a href="https://platzi.com/@xbasir/" target="_blank">haciendo clic aquí</a></div>
-              </div>
-              <div class="resume-date text-md-right">
-                <span class="text-primary">FEB 2018 - Actualidad </span>
-              </div>
-          </div>
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">habilidades y conocimientos</h2>
-
-        <div class="subheading mb-3">conocimiento en Lenguajes &amp; herramientas</div>
-
-        <div class="container-skills mb-4">
-          <div class="bar expert" data-skill="HTML"></div> <i class="fab fa-2x fa-html5"></i>
-          <div class="bar expert" data-skill="CSS"></div> <i class="fab fa-2x fa-css3-alt"></i>
-          <div class="bar back advanced" data-skill="Javascript"></div> <i class="fab fa-2x fa-js-square"></i>
-          <div class="bar front intermediate" data-skill="Vue.js"></div> <i class="fab fa-2x fa-vuejs"></i>
-          <div class="bar front expert" data-skill="Boostrap"></div> <i class="fab fa-2x fa-bootstrap"></i>
-          <div class="bar back intermediate" data-skill="PHP"></div> <i class="fab fa-2x fa-php" style="margin-left: -40px"></i>
-          <div class="bar front intermediate" data-skill="Laravel"></div> <i class="fab fa-2x fa-laravel" style="margin-left: -40px"></i>
-          <div class="bar advanced" data-skill="GIT"></div> <i class="fab fa-2x fa-git-square"></i>
-        </div>
         
-        <div class="row">
-          <div class="col-md-6">
-            <div class="subheading mb-3">Aptitudes y Workflow</div>
-            <ul class="fa-ul mb-0">
-              <li>
-                  <i class="fa-li fa fa-spell-check"></i>
-                  Inglés avanzado</li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Mobile-First</li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Responsive Design</li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                MVC</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <div class="subheading mb-3">otras herramientas manejadas</div>
-            <p class="tag pr-5" style="line-height: 2.8 !important"><span class="tag cuaternary">AJAX</span><span class="tag second">SASS</span>
-              <span class="tag cuaternary">JQUERY</span> <span class="tag tertiary">MySQL</span> <span class="tag tertiary">PostgreSQL</span>
-              <span class="tag second">LESS</span> <span class="tag second">GITHUB</span> <span class="tag second">SLACK</span>
-            </p>
-          </div>
       </div>
-    </section>
 
+    </section>
     <hr class="m-0">
 
+    <!-- portafolio -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center bg-light page-section" id="portfolio">
         <div class="container">
           <div class="row">
@@ -241,8 +214,8 @@
               </a>
               <div class="portfolio-caption">
                 <h4 class="text-uppercase"><a href="https://cocoma.co/" target="_blank"><span class="font-weight-light text-muted">Tienda</span> Cocoma</a></h4>
-                <p class="tag "><span class="tag second">HTML</span><span class="tag second">CSS</span><span class="tag first">JS</span>
-                  <span class="tag first">PHP</span> <span class="tag tertiary">VUE.JS</span> <span class="tag tertiary">LARAVEL</span>
+                <p class="tag "><span class="tag first">HTML</span><span class="tag first">CSS</span><span class="tag second">JS</span>
+                  <span class="tag second">PHP</span> <span class="tag tertiary">VUE.JS</span> <span class="tag tertiary">LARAVEL</span> <span class="tag tertiary">BOOTSTRAP</span>
                 </p>
               </div>
             </div>
@@ -257,8 +230,8 @@
               </a>
               <div class="portfolio-caption">
                 <h4 class="text-uppercase"><a href="http://expo-feria-automotriz.imaginacolombia.com" target="_blank"><span class="font-weight-light text-muted">Sitio</span> EXPOFERIA</a></h4>
-                <p class="tag "><span class="tag second">HTML</span><span class="tag second">CSS</span><span class="tag first">JS</span>
-                  <span class="tag first">PHP</span><span class="tag tertiary">LARAVEL</span> <span class="tag cuaternary">AJAX</span>
+                <p class="tag "><span class="tag first">HTML</span><span class="tag first">CSS</span><span class="tag second">JS</span>
+                  <span class="tag second">PHP</span><span class="tag tertiary">LARAVEL</span> <span class="tag tertiary">BOOTSTRAP</span> <span class="tag cuaternary">AJAX</span>
                 </p>
               </div>
             </div>
@@ -291,7 +264,7 @@
               </a>
               <div class="portfolio-caption">
                 <h4 class="text-uppercase"><a href="https://premusify.herokuapp.com/" target="_blank"><span class="font-weight-light text-muted">App</span> PREMUSIFY</a></h4>
-                <p class="tag "><span class="tag second">HTML</span><span class="tag second">CSS</span><span class="tag first">JS</span>
+                <p class="tag "><span class="tag first">HTML</span><span class="tag first">CSS</span><span class="tag second">JS</span> <span class="tag tertiary">Bulma</span>
                   <span class="tag tertiary">VUE.JS</span>
                 </p>
               </div>
@@ -307,8 +280,8 @@
               </a>
               <div class="portfolio-caption">
                 <h4 class="text-uppercase"><span class="font-weight-light text-muted">Sistema</span> SISMATIT</h4>
-                <p class="tag "><span class="tag second">HTML</span><span class="tag second">CSS</span><span class="tag first">JS</span>
-                  <span class="tag tertiary">LARAVEL</span><span class="tag tertiary">POSTGRESQL</span>
+                <p class="tag "><span class="tag first">HTML</span><span class="tag first">CSS</span><span class="tag second">JS</span><span class="tag second">PHP</span>
+                  <span class="tag tertiary">LARAVEL</span><span class="tag tertiary">BOOTSTRAP</span><span class="tag tertiary">POSTGRESQL</span>
                   <span class="tag cuaternary">JQUERY</span>
                 </p>
               </div>
@@ -324,7 +297,7 @@
               </a>
               <div class="portfolio-caption">
                 <h4 class="text-uppercase"><a href="https://www.lavozdelpueblo920am.com/" target="_blank"><span class="font-weight-light text-muted">SITIO</span> LA VOZ 920AM</a></h4>
-                <p class="tag "><span class="tag second">HTML</span><span class="tag second">CSS</span><span class="tag first">JS</span>
+                <p class="tag "><span class="tag first">HTML</span><span class="tag first">CSS</span><span class="tag second">JS</span><span class="tag second">PHP</span><span class="tag tertiary">BOOTSTRAP</span>
                   <span class="tag tertiary">LARAVEL</span>
                 </p>
               </div>
@@ -340,20 +313,60 @@
               </a>
               <div class="portfolio-caption">
                 <h4 class="text-uppercase"><a href="https://www.smartbau.co/" target="_blank"><span class="font-weight-light text-muted">SITIO</span> SMARTBAU</a></h4>
-                <p class="tag "><span class="tag second">HTML</span><span class="tag second">CSS</span><span class="tag first">JS</span>
-                  <span class="tag tertiary">LARAVEL</span> <span class="tag cuaternary">JQUERY</span>
+                <p class="tag "><span class="tag first">HTML</span><span class="tag first">CSS</span><span class="tag second">JS</span>
+                  <span class="tag tertiary">LARAVEL</span> <span class="tag tertiary">BOOTSTRAP</span> <span class="tag cuaternary">JQUERY</span>
                 </p>
               </div>
             </div>
 
             <div class="col-md-8 col-sm-12 my-auto">
               <div class="portfolio-caption">
-                <h4 class="text-uppercase"><span class="font-weight-light text-muted">Y Muchísimos proyectos más</span> con tecnologías web...</h4>
+                <h4 class="text-uppercase mt-4"><span class="font-weight-light text-muted">Y Muchísimos proyectos más</span> con tecnologías web...</h4>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <hr class="m-0">
+
+    <!-- formación -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Formación académica</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0">Universidad Nacional Experimental de Guayana</h3>
+              <div class="subheading">Ingeniero en Informática</div>
+              <div>Próximo a culminar la carrera (pendiente solo por trabajo de grado)</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">OCT 2014 - Actualidad </span>
+            </div>
+          </div>
+  
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="resume-content">
+                <h3 class="mb-0">Platzi</h3>
+                <div class="subheading ">Estudiante de Cursos en línea sobre desarrollo de software y crecimiento personal</div>
+                <div>Puede consultar mi perfil de Platzi y cursos aprobados <a href="https://platzi.com/@xbasir/" target="_blank">haciendo clic aquí</a></div>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">FEB 2018 - Actualidad </span>
+              </div>
+          </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4">
+            <div class="resume-content">
+              <h3 class="mb-0">U.E.C.P Santo tomé de Guayana</h3>
+              <div class="subheading mb-3">Bachiller en ciencias</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">OCT 2009 - JUL 2014</span>
+            </div>
+          </div>
+      </div>
     </section>
   </div>
 
