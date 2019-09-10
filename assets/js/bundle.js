@@ -84,39 +84,15 @@
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./js/resume.js":
-/*!**********************!*\
-  !*** ./js/resume.js ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("(function($) {\n  \"use strict\"; // Start of use strict\n\n  // Smooth scrolling using jQuery easing\n  $('a.js-scroll-trigger[href*=\"#\"]:not([href=\"#\"])').click(function() {\n    if (location.pathname.replace(/^\\//, '') == this.pathname.replace(/^\\//, '') && location.hostname == this.hostname) {\n      var target = $(this.hash);\n      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');\n      if (target.length) {\n        $('html, body').animate({\n          scrollTop: (target.offset().top)\n        }, 1000, \"easeInOutExpo\");\n        return false;\n      }\n    }\n  });\n\n  // Closes responsive menu when a scroll trigger link is clicked\n  $('.js-scroll-trigger').click(function() {\n    $('.navbar-collapse').collapse('hide');\n  });\n\n  // Activate scrollspy to add active class to navbar items on scroll\n  $('body').scrollspy({\n    target: '#sideNav'\n  });\n\n})(jQuery); // End of use strict\n\n\n//# sourceURL=webpack:///./js/resume.js?");
-
-/***/ }),
-
-/***/ "./scss/resume.scss":
-/*!**************************!*\
-  !*** ./scss/resume.scss ***!
-  \**************************/
+/******/ ([
+/* 0 */
+/*!*********************!*\
+  !*** multi run dev ***!
+  \*********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"css/resume.style.css\";\n\n//# sourceURL=webpack:///./scss/resume.scss?");
-
-/***/ }),
-
-/***/ 0:
-/*!***********************************************!*\
-  !*** multi ./js/resume.js ./scss/resume.scss ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("__webpack_require__(/*! ./js/resume.js */\"./js/resume.js\");\nmodule.exports = __webpack_require__(/*! ./scss/resume.scss */\"./scss/resume.scss\");\n\n\n//# sourceURL=webpack:///multi_./js/resume.js_./scss/resume.scss?");
+eval("!(function webpackMissingModule() { var e = new Error(\"Cannot find module 'run'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module 'dev'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n//# sourceURL=webpack:///multi_run_dev?");
 
 /***/ })
-
-/******/ });
+/******/ ]);
